@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700');
+
+
+#about {
+	padding: 50px 0 50px 0;
+}
+
+.resume-section {
+display: flex;
+flex-direction: column;
+width: 80%;
+padding: 15px 10%;
+overflow: hidden;
+}
+
+.resume-title {
+    width: 100%;
+}
+
+.resume-info {
+    width: 100%;
+}
+
+.resume-title h3 {
+    text-align: left;
+}
+
+
+.description {
+    list-style-type: none;
+    text-align: left;
+}
+
+.resume-list li {
+    list-style-type: none;
+    text-align: left;
+}
+
+ ul li{
+   font-weight:200;
+    list-style-type: none;
+    padding: 10px;
+}
+
+.navlink {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: black;
+    text-decoration: none;
+    font-weight: 300;
+    font-size: 1.1em;
+}
+
+portfolio {
+    color: black;
+    font-weight:400;
+    transition: color .5s;
+}
+
+portfolio:hover {
+  color: black;
+  background: none;
+}
+
+h1{
+  padding:50px 0 50px 0;
+  color:black;
+  font-weight: 400;
+  transition: color .6s;
+}
+
+h1:hover{
+  color:cornflowerblue;
+  background: none;
+}
+
+h2{
+  color:black;
+  font-weight: 400;
+  transition: color .6s;
+}
+
+h2:hover{
+  color:cornflowerblue;
+  background: none;
+}
+
+
+
+a {
+    color: black;
+    font-weight:400;
+    transition: color .5s;
+}
+
+a:hover {
+  color: cornflowerblue;
+  background: none;
+}
+
+.row{
+    margin: 10px 0;
+}
+
+
+.col {
+    margin-right: 10px;
+    padding: 10px;
+     }
+
+nav {
+    flex-wrap: nowrap;
+}
+
+.content {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+    flex-flow: row ;
+    justify-content: space-around; 
+}
+
+/*Portfolio*/
+* {
+  box-sizing: border-box;
+}
+
+/* Layout with Flexbox */
+.gallery {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+figure {
+  background: #eee;
+    padding: 1em;
+    height: 90%;
+  flex-direction: row;
+  
+ /* Child & Also Parent   */
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Gallery Styling. */
+figure img {
+    width: 300px;
+    height:auto;
+}
+
+
+/* Lightbox Overlay */
+.overlay {
+  display: none;
+  
+/* Overlay Styling   */
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.8);   
+}
+
+.overlay:target {
+  display: flex;
+  min-height: 50vh;
+  justify-content: center;
+  align-items: center; 
+  flex-direction: column;    
+}
+
+.overlay img {
+    width: 380px;
+    height: auto;
+    border: none;
+}
+
+/* Close Button  */
+.overlay a {
+   font-size: 1em;
+    margin: 15px;
+    padding: 10px;
+    color: white;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+/*Contact Form*/
+
+input[type="email"], input[type="search"], input[type="text"], input[type="tel"], input[type="url"], textarea, select {
+	height: 38px;
+	padding: 6px 10px; 
+	background-color: #F5F5F5;
+	border: none;
+	box-shadow: none;
+	box-sizing: border-box;
+	border-radius: 0;
+	outline: none;
+}
+textarea {
+	min-height: 20px;
+}
+input[type="submit"] {
+	display: inline-block;
+	height: 38px;
+	padding: 0 20px;
+	color: #fff;
+	text-align: center;
+	font-size: 14px;
+	font-weight: 600;
+	line-height: 38px;
+	letter-spacing: .1rem;
+	text-transform: uppercase;
+	text-decoration: none;
+	white-space: nowrap;
+	background: #5fc3e4;
+	border-radius: 0px;
+	border: 0;
+	box-sizing: border-box;
+}
+input[type="submit"]:hover {
+	background: #e55d87;
+	text-decoration: none;
+}
+
+
+
+
+header {
+display: flex;
+justify-content: center;
+width: 100%%;
+height: 100vh;
+background: #e55d87;
+background: -moz-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
+background: -webkit-linear-gradient(-45deg, #e55d87 0%, #5fc3e4 100%);
+	background: linear-gradient(135deg, #e55d87 0%, #5fc3e4 100%);
+ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e55d87', endColorstr='#5fc3e4', GradientType=1 );
+}
+
+/* Demi Deletang */
+.title {
+	-webkit-align-self: center;
+	-ms-flex-item-align: center;
+	align-self: center;
+	padding: 2rem;
+	max-width: 960px;
+	text-align: center;
+}
+
+.title h1 {
+	font-size: 80px;
+	font-weight: 300;
+	text-transform: uppercase;
+	line-height: 0.85;
+	margin-bottom: 28px;
+	margin: 0;
+	padding: 0;
+	color: #FFFFFF;
+}
+.title h2 {
+	color: #FFFFFF;
+	font-size: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	margin-top: 50px;
+}
+
+
